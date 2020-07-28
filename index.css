@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Patua+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e1ecf2;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.hamburger{
+        display: none;
+}
+
+.navigation{
+    display: flex;
+    height: 60px;
+    background-color: #fff;
+    width: 100%;
+ 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    margin: 10px 0;
+ 
+}
+
+
+
+.logo a{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-family: 'Anton', sans-serif;
+}
+
+.logo a i{
+    font-size: 40px;
+    color: blue;
+}
+
+.right_nav_items ul{
+    display: flex;
+    align-items: center;
+}
+
+.right_nav_items ul li{
+ margin: 0 10px;
+ position: relative;
+}
+
+.right_nav_items ul li a{
+    
+   color: black;
+}
+
+.right_nav_items ul li img{
+    
+    border-radius: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+    
+}
+
+.right_nav_items ul li a i{
+    font-size: 20px;
+}
+
+.dd_menu{
+ 
+    display: none;
+}
+
+.dd_menu::before{
+    content: "";
+    position: fixed;
+top:51px;
+right:96px;
+border-width: 25px 13px;
+border-style: solid;
+border-color: transparent transparent #fff transparent;
+}
+.dd_menu .left{
+    width: 30%;
+    background-color: rgb(225, 154, 47);
+    border-radius: 5px 0 0 5px;
+}
+
+.dd_menu .right{
+    width: 70%;
+    
+}
+
+.dd_menu .left ul{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e1ecf2;
+}
+
+.dd_menu .left ul li{
+    margin-bottom: 1px;
+    padding: 10px 23px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.dd_menu .left ul li:hover{
+    background-color: black;
+    color: #e1ecf2;
+    transition: all 0.1s ease;
+}
+
+.dd_menu .right ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.dd_menu .right ul li{
+   margin-top: 5px;
+   border-radius: 0 5px 5px 0;
+  width: 100%;
+  height: 38px;
+  text-align: center;
+  /* border: 2px solid; */
+  padding: 7px 0;
+ 
+ 
+}
+
+.dd_menu .right ul li a{
+    color: black; 
+    font-family: 'Anton', sans-serif;
+   
+ }
+
+ .dd_menu .right ul li:hover{
+    background-color: rgba(54, 122, 240, 0.845);
+  
+   
+ }
+
+ .collapse .dd_menu {
+     
+     display: flex;
+ position: absolute;
+ top: 75px;
+ right: -25px;
+ background: #fff;
+ width:200px;
+ border-radius: 10px;
+ height: 214px;
+transition: all 0.45s ease-in-out;
+ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+ }
+
+ .main_menu ul{
+     display: flex;
+    justify-content: center;
+    margin-right: 65px;
+    
+ }
+ 
+ .main_menu ul li{
+     position: relative;
+     padding: 17px 10px;
+     font-size: 18px;
+      
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+    /* border: 1px solid; */
+    margin-right: 1px;
+ }
+
+
+ .main_menu ul li a{
+    
+    
+   color: black;
+   
+ }
+
+ .main_menu ul li:last-child {
+    margin-right: 0px;
+}
+
+.sport:hover{
+    background-color: #f2c210;
+    border-radius: 2px;
+}
+
+.foods:hover{
+    background-color: #f26a10;
+    border-radius: 2px; 
+ }
+
+ .sport:hover .sport_menu{
+    display: flex;
+ }
+
+.items:hover{
+    background-color: #0db7af;
+    border-radius: 2px;
+}
+
+.settings:hover{
+    background-color: #fb56c1;
+    border-radius: 2px;
+    
+}
+
+.settings:hover .setting_menu{
+display: block;
+}
+
+
+.home:hover{
+    background-color: #ee5f73;
+    border-radius: 2px;
+}
+
+.sport_menu{
+    position: absolute;
+    top:62px;
+    background-color: #fff;
+    width:700px;
+    right:-340px;
+    
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    display: none;
+}
+
+.middle_sport_menu::before{
+    content: "";
+   
+    margin:-2px 41px;
+    width: 60px;
+    border:2px solid #f2c210;
+    display: flex;
+}
+
+.sport_menu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.left_sport_menu{
+    width:35%;
+    border-right: 1px solid #e1ecf2;
+}
+
+.middle_sport_menu{
+    width:35%;
+    border-right: 1px solid #e1ecf2;
+}
+
+.right_sport_menu{
+    width:30%;
+    /* border: 2px solid; */
+}
+
+.sport_menu h3{
+    text-align: left;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    color: #f2c210;
+}
+
+.sport_menu ul li{
+    margin: 2px 0;
+    text-align: left;
+    padding: 10px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.sport_menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+
+.setting_menu::before{
+    content: "";
+   
+    margin:-2px 60px;
+    width: 70px;
+    border:2px solid #fb56c1;
+    display: flex;
+}
+
+
+.setting_menu {
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 248px;
+    top:62px;
+    right: -55px;
+    border-radius: 10px;
+   display: none;
+   z-index: 1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    
+}
+
+.setting_menu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.setting_menu ul li{
+    margin: 2px 0;
+    padding: 10px 70px;
+    width: 100%;
+
+    
+}
+
+.setting_menu ul li a{
+   margin: 0 -10px;
+    /* padding: 10px 70px; */
+    
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.setting_menu ul li:hover{
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+
+.stump_menu{
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 248px;
+    top:0;
+    right: -203px;
+    border-radius: 10px;
+   display: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.stump:hover .stump_menu{
+    display: block;
+}
+
+/* searchbox */
+.search_box{
+    position: relative;
+
+}
+
+.input{
+    width: 0px;
+    border: 0;
+    background-color:  #e1ecf2;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 3px 1px #b6bbc0;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    transition: all 0.5s linear;
+   
+}
+
+.search_btn{
+    width:40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+.search_btn .fas{
+    position: absolute;
+    top:12px;
+    right: 11px;
+    transition: all 0.5s linear;
+}
+
+.search_btn.bg-red{
+    background-color: red;
+   
+}
+
+.search_btn .fas.color-white{
+    color: #fff;
+}
+
+.search_box .input.active-width{
+    width: 275px;
+}
+
+@media screen and  (max-width:900px){
+    .navigation{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .main_menu ul{
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    .main_menu{
+        margin-top: 18px;
+        
+       
+    }
+    .main_menu ul li{
+        text-align: center;
+       padding: 18px 325px;
+        
+    }
+    .sport:hover .sport_menu{
+    
+        display: none;
+    }
+    .settings:hover:hover .setting_menu{
+    
+        display: none;
+    }
+    .search_box{
+        margin-top:18px ;
+    }
+    .right_nav_items{
+        margin-top: 20px;
+    }
+    .collapse .dd_menu{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .hamburger .fas{
+        font-size: 30px;
+    }
+    .burger .navigation{
+        
+        height: 55px;
+
+    }
+    .burger .main_menu ul{
+        display: none;
+    }
+    .burger .search_box{
+        display: none;
+    }
+    .burger .right_nav_items{
+        display: none;
+        
+    }
+
+}

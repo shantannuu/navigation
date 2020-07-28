@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>HOME</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+         $(".li").click(function(){
+             $(".right_nav_items").toggleClass("collapse");
+         })
+         $(".search_btn").click(function(){
+            $(this).toggleClass("bg-red");
+            $(".fas").toggleClass("color-white");
+            $(".input").focus().toggleClass("active-width");
+         })
+         $(".hamburger").click(function(){
+             $(".wrapper").toggleClass("burger");
+            
+         })
+         
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <div class="navigation">
+            
+            <div class="logo">
+                <a href="#"><i class="fab fa-playstation"></i></a>
+                <a href="#">PLACE STATION</a>
+            </div>
+            <div class="main_menu">
+                <ul>
+                    <li class="home active"><a  href="#" >HOME</a></li>
+                    <li class="sport"><a href="#" >SPORTS</a>
+                    <div class="sport_menu">
+                        <div class="left_sport_menu">
+                            <h3>Cricket</h3>
+                            <ul>
+                            <li>Bats</li>
+                            <li>Balls</li>
+                            <li>Stumps</li>
+                            <li>Gloves</li>
+                            <li>KitBags</li>
+                        </ul>
+                        </div>
+                        <div class="middle_sport_menu"><h3>Cricket</h3>
+                            <ul>
+                            <li>Bats</li>
+                            <li>Balls</li>
+                            <li>Stumps</li>
+                            <li>Gloves</li>
+                            <li>KitBags</li>
+                        </ul></div>
+                        <div class="right_sport_menu"><h3>Cricket</h3>
+                            <ul>
+                            <li>Bats</li>
+                            <li>Balls</li>
+                            <li>Stumps</li>
+                            <li>Gloves</li>
+                            <li>KitBags</li>
+                        </ul></div>
+                    </div>
+                    </li>
+                    <li class="foods"><a href="#">FOOD</a></a>
+                   
+                    </li>
+                    <li class="items"><a href="#" >ITEMS</a></li>
+                    <li class="settings"><a href="#" >SETTINGS</a>
+                        <div class="setting_menu">
+                            
+                                
+                                <ul>
+                                <li><a href="#">Bats</a></li>
+                                <li><a href="#">Balls</a></li>
+                                <li class="stump"><a href="#">Stumps</a>
+                                <div class="stump_menu">
+                                    <ul><li><a href="#">Bats</a></li>
+                                        <li><a href="#">Balls</a></li>
+                                        <li><a href="#">Stumps</a>
+                                        </li>
+                                        <li><a href="#">Gloves</a></li>
+                                        <li><a href="#">KitBags</a></li></ul>
+                                </div>
+
+                                
+                                <li><a href="#">Gloves</a></li>
+                                <li><a href="#">KitBags</a></li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_box">
+                <input type="text" class="input">
+                <div class="search_btn">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="right_nav_items">
+                <ul>
+                    <li class="li"><img src="./user.jpeg" alt="" width="50px" height="50px">
+                    <div class="dd_menu">
+                        <div class="left">
+                            <ul>
+                                <li><i class="fas fa-user"></i></li>
+                                <li><i class="fas fa-registered"></i></li>
+                                <li><i class="fas fa-sign-in-alt"></i></li>
+                                <li><i class="fas fa-shopping-bag"></i></li>
+                                <li><i class="fab fa-hire-a-helper"></i></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+                </ul>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
